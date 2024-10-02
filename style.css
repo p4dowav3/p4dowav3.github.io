@@ -43,6 +43,7 @@ body, html {
 }
 
 .language-option {
+    font-size: 20px;
     color: white;
     text-decoration: none;
     margin: 0 10px;
