@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'DOSPilgiMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/DOSPilgiMedium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -22,17 +29,12 @@ body, html {
     color: white;
     text-align: center;
     font-size: 2em;
+    font-family: 'DOSPilgiMedium';
 }
 
 body {
+    font-family: Arial, sans-serif;
     background-color: transparent;
-}
-
-@font-face {
-    font-family: 'DOSPilgiMedium';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/DOSPilgiMedium.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
 }
 
 nav ul {
@@ -61,6 +63,7 @@ nav ul li a:hover {
 
 h1 {
     color: #333;
+    font-family: 'DOSPilgiMedium';
 }
 
 p {
