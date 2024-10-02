@@ -10,6 +10,8 @@ body, html {
     padding: 0;
     height: 100%;
     overflow: hidden;
+    font-family: 'DOSPilgiMedium';
+    color: white;
 }
 
 .video-background {
@@ -30,47 +32,21 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    color: white;
     text-align: center;
     font-size: 2em;
-    font-family: 'DOSPilgiMedium';
 }
 
-body {
-    font-family: 'DOSPilgiMedium';
-    background-color: transparent;
+.title {
+    margin-bottom: 20px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    background-color: #333;
-    overflow: hidden;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
+.language-option {
     color: white;
-    padding: 14px 20px;
-    display: inline-block;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: opacity 0.3s;
 }
 
-nav ul li a:hover {
-    background-color: #575757;
-}
-
-h1 {
-    color: #333;
-    font-family: 'DOSPilgiMedium';
-}
-
-p {
-    font-size: 18px;
-    padding: 10px;
+.language-option:hover {
+    opacity: 0.7;
 }
