@@ -57,6 +57,12 @@ body, html {
     transition: opacity 0.3s;
 }
 
+.lang-menu {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 50px;
+}
+
 .language-option:hover {
     opacity: 0.7;
 }
