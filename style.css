@@ -66,7 +66,7 @@ body, html {
     transform: translateX(-50%);
     display: flex;
     gap: 20px;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .lang-menu a {
@@ -121,5 +121,5 @@ body.fade-out {
 
 
 .page-title {
-    margin-top: 110px;
+    margin-top: 120px;
 }
