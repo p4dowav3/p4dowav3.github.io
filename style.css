@@ -65,7 +65,7 @@ body, html {
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 20px; /* adds space between the items */
+    gap: 20px;
     font-size: 20px;
     color: white;
 }
@@ -106,3 +106,7 @@ body.fade-out {
     background-color: black;
 }
 
+
+.page-title {
+    margin-top: 100px;
+}
