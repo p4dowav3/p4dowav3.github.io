@@ -60,10 +60,14 @@ body, html {
 }
 
 .lang-menu {
-    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px; /* adds space between the items */
     font-size: 20px;
     color: white;
-    margin-bottom: 50px;
 }
 
 .language-option:hover {
