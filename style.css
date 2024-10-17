@@ -44,11 +44,11 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    text-align: center;
-    font-size: 25px;
+    text-align: justify;
+    font-size: 20px;
     font-family: 'MiraeroNormal';
     overflow-y: auto;
-    max-height: 80%;
+    max-height: 50%;
 }
 
 .title {
