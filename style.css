@@ -54,7 +54,7 @@ body, html {
   .content {
     width: 100%;
     text-align: justify;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     font-family: 'MiraeroNormal';
     overflow-y: auto;
     max-height: calc(100% - 10vh);
