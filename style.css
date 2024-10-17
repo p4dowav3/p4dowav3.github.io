@@ -137,10 +137,14 @@ body.fade-out {
     -webkit-background-clip: text;
     color: transparent;
     display: inline-block;
+    font-size: 1.4rem;
+    font-weight: bold;
  }
 .trans-text {
     background-image: linear-gradient(to right, #5BCEFA, #F5A9B8, #FFFFFF, #F5A9B8, #5BCEFA);
     -webkit-background-clip: text;
     color: transparent;
     display: inline-block;
+    font-size: 1.4rem;
+    font-weight: bold;
 }
