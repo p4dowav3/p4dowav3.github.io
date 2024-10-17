@@ -46,17 +46,21 @@ body, html {
     z-index: 1;
     text-align: center;
     font-size: 25px;
-    font-family: 'DOSPilgiMedium';
+    font-family: 'MiraeroNormal';
+    overflow-y: auto;
+    max-height: 80%;
 }
 
 .title {
     text-align: center;
     font-size: 55px;
     margin-bottom: 25px;
+    font-family: 'DOSPilgiMedium';
 }
 
 .language-options {
     font-size: 1.5em;
+    font-family: 'DOSPilgiMedium';
 }
 
 .language-option {
@@ -81,6 +85,7 @@ body, html {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
+    font-family: 'DOSPilgiMedium';
 }
 
 .lang-menu a:hover {
@@ -127,7 +132,7 @@ body.fade-out {
     background-color: black;
 }
 
-
 .page-title {
     margin-top: 120px;
+    font-family: 'DOSPilgiMedium';
 }
