@@ -137,7 +137,7 @@ body.fade-out {
     -webkit-background-clip: text;
     color: transparent;
     display: inline-block;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: bold;
  }
 .trans-text {
@@ -145,6 +145,6 @@ body.fade-out {
     -webkit-background-clip: text;
     color: transparent;
     display: inline-block;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
