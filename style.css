@@ -132,3 +132,15 @@ body.fade-out {
     margin-top: 120px;
     font-family: 'DOSPilgiMedium';
 }
+.rainbow-text {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+ }
+.trans-text {
+    background-image: linear-gradient(to right, #5BCEFA, #F5A9B8, #FFFFFF, #F5A9B8, #5BCEFA);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
