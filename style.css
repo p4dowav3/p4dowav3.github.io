@@ -4,65 +4,70 @@
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'MiraeroNormal';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/MiraeroNormal.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body, html {
     height: 100%;
-    margin: 0;
+    overflow: hidden;
     font-family: 'DOSPilgiMedium';
     color: white;
     font-size: 16px;
 }
-
+.video-background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
 .content-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* 또는 원하는 너비 */
+    max-height: 80vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: justify;
     flex-direction: column;
+    align-items: center;
 }
 
-.title {
-    font-size: 55px;
+.title.page-title {
+    margin-top: 0;
     margin-bottom: 40px;
-    font-family: 'DOSPilgiMedium';
-    text-align: center;
 }
 
 .content {
+    width: 100%;
+    text-align: justify;
     font-size: 20px;
     font-family: 'MiraeroNormal';
-    text-align: justify;
     overflow-y: auto;
-    max-height: 60%;
-    width: 80%;
+    max-height: calc(100% - 100px);
 }
-
 .title {
     text-align: center;
     font-size: 55px;
     margin-bottom: 40px;
     font-family: 'DOSPilgiMedium';
 }
-
 .language-options {
     font-size: 1.5em;
     font-family: 'DOSPilgiMedium';
 }
-
 .language-option {
     font-size: 30px;
     color: white;
@@ -70,7 +75,6 @@ body, html {
     margin: 0 10px;
     transition: opacity 0.3s;
 }
-
 .lang-menu {
     position: absolute;
     top: 30px;
@@ -80,26 +84,21 @@ body, html {
     gap: 20px;
     font-size: 30px;
 }
-
 .lang-menu a {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
     font-family: 'DOSPilgiMedium';
 }
-
 .lang-menu a:hover {
     opacity: 0.7;
 }
-
 .lang-menu a:active {
     color: white;
 }
-
 .language-option:hover {
     opacity: 0.7;
 }
-
 @keyframes fadeOut {
     from {
         opacity: 1;
@@ -110,7 +109,6 @@ body, html {
         background-color: black;
     }
 }
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -121,17 +119,14 @@ body, html {
         background-color: black;
     }
 }
-
 body {
     animation: fadeIn 1.5s;
     background-color: black;
 }
-
 body.fade-out {
     animation: fadeOut 1.5s;
     background-color: black;
 }
-
 .page-title {
     margin-top: 120px;
     font-family: 'DOSPilgiMedium';
