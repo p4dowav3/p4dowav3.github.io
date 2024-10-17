@@ -33,31 +33,32 @@ body, html {
     z-index: -1;
     transform: translate(-50%, -50%);
 }
-.content-wrapper {
+  .content-wrapper {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
+    width: 40%;
     max-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+  }
 
-.title.page-title {
+  .title.page-title {
     margin-top: 0;
-    margin-bottom: 100px;
-}
+    margin-bottom: 5vh;
+    font-size: 3.5rem;
+  }
 
-.content {
+  .content {
     width: 100%;
     text-align: justify;
-    font-size: 25px;
+    font-size: 1.25rem;
     font-family: 'MiraeroNormal';
     overflow-y: auto;
-    max-height: calc(100% - 100px);
-}
+    max-height: calc(100% - 10vh);
+  }
 .title {
     text-align: center;
     font-size: 55px;
