@@ -47,14 +47,14 @@ body, html {
 
   .title.page-title {
     margin-top: 0;
-    margin-bottom: 5vh;
+    margin-bottom: 8vh;
     font-size: 3.5rem;
   }
 
   .content {
     width: 100%;
     text-align: justify;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-family: 'MiraeroNormal';
     overflow-y: auto;
     max-height: calc(100% - 10vh);
