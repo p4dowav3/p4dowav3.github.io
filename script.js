@@ -136,7 +136,7 @@ function displayPlaylist(playlist) {
     const playlistDisplay = document.getElementById('playlist-display');
     let html = '<ul>';
     playlist.forEach((song, index) => {
-        html += `<li><a href="#" onclick="loadVideo(${index})">${song.title}</a></li>`;
+        html += `<li><a href="#" onclick="loadVideo(${index}); return false;">${song.title}</a></li>`;
     });
     html += '</ul>';
     playlistDisplay.innerHTML = html;
