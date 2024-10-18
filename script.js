@@ -69,9 +69,17 @@ const playlists = {
     ],
     playlist2: [
         { title: "ヴァンパイア", url: "e1xCOsgWG0M" },
-        { title: "イガク", url: "F38EuG2dAyM" },
-        { title: "メズマライザー", url: "19y8YTbvri8" },
+        { title: "キュートなカノジョ", url: "oFmup8lxUHw" },
+        { title: "私の恋はヘルファイア", url: "heTaHWABCOo" },
+        { title: "シャンティ(SHANTI)", url: "POy0RvJeaqM" },
         { title: "BUTCHER VANITY", url: "vjBFftpQxxM" }
+    ],
+    playlist3: [
+        { title: "人マニア", url: "HTxwOxFt5d4" },
+        { title: "トラフィック・ジャム", url: "oUevY6uH4Qg" },
+        { title: "㋰責任集合体", url: "c5_0NPftdlY" },
+        { title: "メズマライザー", url: "19y8YTbvri8" },
+        { title: "脱法ロック", url: "u5mHVUwDf_0" }
     ]
 };
 
