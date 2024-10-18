@@ -317,6 +317,7 @@ h1 {
 #player {
     width: 100%;
     margin-bottom: 20px;
+    background: transparent;
 }
 
 .player-controls {
@@ -338,4 +339,16 @@ h1 {
 
 .player-controls button:hover {
     background-color: rgba(255, 255, 255, 0.2);
+}
+
+.ytp-chrome-top, .ytp-chrome-bottom {
+    display: none;
+}
+
+.ytp-cued-thumbnail-overlay {
+    display: none;
+}
+
+.ytp-large-play-button {
+    display: none;
 }
