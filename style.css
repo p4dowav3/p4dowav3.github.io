@@ -93,6 +93,9 @@ body, html {
     margin: 0 10px;
     transition: opacity 0.3s;
 }
+.language-option.block {
+    display: block;
+}
 .index-content .language-options {
     display: flex;
     justify-content: center;
