@@ -87,6 +87,12 @@ const playlists = {
         { title: "パジャミィ", url: "aBZqxfnvaVA" },
         { title: "踊れオーケストラ", url: "5XcRbKUKSdY" },
         { title: "キラピピ★キラピカ", url: "mQH0Fmk1K0g" }
+    playlist5: [
+        { title: "Resonant Objects", url: "He0-sUdNI3Q" },
+        { title: "Bloody KOF XV ver.", url: "5OT8pDw8aWE" },
+        { title: "Rhythmic Hallucination -KOF XV ver.-", url: "EMkFNWO31yo" },
+        { title: "Fanatic Waltz -KOF XV ver.-", url: "RQhqbz3O1bI" },
+        { title: "Fanatic Waltz -KOF XV ver.-", url: "_OCgm2t7-Fc" }
     ]
 };
 
