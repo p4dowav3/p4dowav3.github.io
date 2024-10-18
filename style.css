@@ -97,11 +97,14 @@ body, html {
 .extra-options {
     margin-top: 20px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
 .extra-options .language-option {
     display: inline-block;
-    margin: 0 10px;
-    margin-top: 10px;
+    margin: 10px;
 }
 
 .index-content .language-options {
@@ -128,11 +131,14 @@ body, html {
         align-items: center;
     }
 
-    .index-content .language-options {
+    .index-content .language-options,
+    .extra-options {
         flex-direction: column;
+        align-items: center;
     }
 
-    .index-content .language-option {
+    .index-content .language-option,
+    .extra-options .language-option {
         margin: 10px 0;
     }
 }
