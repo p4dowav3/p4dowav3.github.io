@@ -1,17 +1,17 @@
 <!DOCTYPE html>
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>パド</title>
+    <title>Playlist</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://www.youtube.com/iframe_api"></script>
-    <script src="script.js"></script>
 </head>
 <body>
-    <video class="video-background" autoplay muted loop playsinline>
-        <source src="back.mp4" type="video/mp4">
+    <video autoplay muted loop class="video-background">
+        <source src="background_video.mp4" type="video/mp4">
         브라우저가 동영상을 지원하지 않습니다.
     </video>
+
     <div class="lang-menu">
         <a href="index.html">home</a>
         <a href="kr.html">kr</a>
@@ -20,27 +20,30 @@
         <a href="links.html">links</a>
     </div>
 
+    <div class="content-wrapper">
+        <h1 id="playlist" class="title page-title">Playlist</h1>
 
-<div class="content-wrapper">
-    <h1 class="title page-title">Playlist</h1>
-    <div style="text-align:center;font-size:30px;">Still preparing! Soon...</div>
-    <div class="playlist-container">
-        <div class="playlist-buttons">
-            <a href="#" class="playlist-button" data-playlist="playlist1">💙</a>
-            <a href="#" class="playlist-button" data-playlist="playlist2">🔥</a>
-            <a href="#" class="playlist-button" data-playlist="playlist3">❗</a>
-        </div>
-        <div class="playlist-content">
-            <div id="player"></div>
-            <div id="playlist-display"></div>
-            <div class="player-controls">
-                <button id="prevButton">Previous</button>
-                <button id="playPauseButton">Play/Pause</button>
-                <button id="nextButton">Next</button>
+        <div class="playlist-container">
+            <div class="playlist-buttons">
+                <a href="#" class="playlist-button" data-playlist="playlist1">💙</a>
+                <a href="#" class="playlist-button" data-playlist="playlist2">🔥</a>
+                <a href="#" class="playlist-button" data-playlist="playlist3">❗</a>
+            </div>
+
+            <div class="playlist-content">
+                <div id="player"></div>
+                <div id="playlist-display"></div>
+
+                <div class="player-controls">
+                    <button id="prevButton">Previous</button>
+                    <button id="playPauseButton">Play/Pause</button>
+                    <button id="nextButton">Next</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
 </body>
 </html>
