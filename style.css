@@ -93,9 +93,11 @@ body, html {
     margin: 0 10px;
     transition: opacity 0.3s;
 }
-.language-option.block {
+.language-option:nth-child(4),
+.language-option:nth-child(5) {
     display: block;
 }
+
 .index-content .language-options {
     display: flex;
     justify-content: center;
