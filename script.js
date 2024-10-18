@@ -47,6 +47,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
         loadPage(window.location.pathname);
     });
 
+    const tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    const firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    initPlaylist();
+});
+
 let player;
 let currentPlaylist = [];
 let currentVideoIndex = 0;
@@ -82,9 +90,7 @@ function onYouTubeIframeAPIReady() {
 }
 
 function onPlayerReady(event) {
-    document.getElementById("playPauseButton").addEventListener('click', togglePlayPause);
-    document.getElementById("prevButton").addEventListener('click', playPrevious);
-    document.getElementById("nextButton").addEventListener('click', playNext);
+    initializePlaylistButtons();
 }
 
 function onPlayerStateChange(event) {
@@ -154,18 +160,17 @@ function initializePlaylistButtons() {
             loadPlaylist(playlistName);
         });
     });
+
+    document.getElementById("playPauseButton").addEventListener('click', togglePlayPause);
+    document.getElementById("prevButton").addEventListener('click', playPrevious);
+    document.getElementById("nextButton").addEventListener('click', playNext);
 }
 
-// Check if YouTube IFrame API is loaded
-function checkYouTubeApiLoaded() {
-    if (typeof YT !== 'undefined' && YT.Player) {
-        onYouTubeIframeAPIReady();
+function initPlaylist() {
+    // This function will be called after the page content is loaded
+    if (typeof YT === 'undefined' || !YT.Player) {
+        window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
     } else {
-        setTimeout(checkYouTubeApiLoaded, 100);
+        onYouTubeIframeAPIReady();
     }
 }
-
-document.addEventListener('DOMContentLoaded', (event) => {
-    initializePlaylistButtons();
-    checkYouTubeApiLoaded();
-});
