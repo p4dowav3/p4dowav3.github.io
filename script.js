@@ -13,40 +13,41 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     });
 
-    function loadPage(url) {
-        fetch(url)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.text();
-            })
-            .then(html => {
-                const parser = new DOMParser();
-                const doc = parser.parseFromString(html, 'text/html');
-                const newContent = doc.querySelector('.content-wrapper').innerHTML;
-                
-                document.body.style.opacity = 0;
+function loadPage(url) {
+    fetch(url)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
+        .then(html => {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
 
-                setTimeout(() => {
-                    document.querySelector('.content-wrapper').innerHTML = newContent;
+            const newContent = doc.querySelector('.content-wrapper');
+            if (newContent) {
+                document.querySelector('.content-wrapper').innerHTML = newContent.innerHTML;
+            }
 
-                    const newLangMenu = doc.querySelector('.lang-menu').innerHTML;
-                    document.querySelector('.lang-menu').innerHTML = newLangMenu;
-                    
-                    history.pushState(null, '', url);
+            const newLangMenu = doc.querySelector('.lang-menu');
+            if (newLangMenu) {
+                document.querySelector('.lang-menu').innerHTML = newLangMenu.innerHTML;
+            }
 
-                    document.title = doc.title;
-                    
-                    document.body.style.opacity = 1;
-                    document.body.classList.remove('fade-out');
-                }, 300);
-            })
-            .catch(error => {
-                console.error('Fetch error:', error);
-                window.location.href = url;
-            });
-    }
+            history.pushState(null, '', url);
+
+            document.title = doc.title;
+
+            document.body.style.opacity = 1;
+            document.body.classList.remove('fade-out');
+        })
+        .catch(error => {
+            console.error('Fetch error:', error);
+            window.location.href = url;
+        });
+}
+
 
     window.addEventListener('popstate', () => {
         loadPage(window.location.pathname);
