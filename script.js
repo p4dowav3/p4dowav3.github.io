@@ -74,9 +74,13 @@ const playlists = {
         { title: "BUTCHER VANITY", url: "vjBFftpQxxM" }
     ],
     playlist3: [
+        { title: preparing!, url: "AuKR2fQbMBk" },
+        { title: preparing!, url: "AuKR2fQbMBk" },
         { title: preparing!, url: "AuKR2fQbMBk" }
     ],
     playlist4: [
+        { title: preparing!, url: "AuKR2fQbMBk" }.
+        { title: preparing!, url: "AuKR2fQbMBk" }.
         { title: preparing!, url: "AuKR2fQbMBk" }
     ]
 };
