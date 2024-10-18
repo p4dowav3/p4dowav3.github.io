@@ -37,6 +37,21 @@ body, html {
     transform: translate(-50%, -50%);
 }
 
+.index-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+.index-title {
+    font-size: 55px;
+    margin-bottom: 40px;
+    font-family: 'DOSPilgiMedium';
+}
+
 .content-wrapper {
     position: absolute;
     top: 50%;
@@ -94,7 +109,7 @@ body, html {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%; 
+    width: 100%;
     max-width: 100%;
     padding: 5px;
 }
