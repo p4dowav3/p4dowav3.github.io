@@ -224,7 +224,7 @@ h1 {
     padding-top: 20px;
 }
 
-.link content {
+.link-content {
     width: 100%;
     text-align: center;
     line-height: 1.5;
@@ -232,15 +232,15 @@ h1 {
     font-family: 'DOSPilgiMedium';
   }
 
-.link content a {
+.link-content a {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
     font-family: 'DOSPilgiMedium';
 }
-.link content a:hover {
+.link-content a:hover {
     opacity: 0.7;
 }
-.link content a:active {
+.link-content a:active {
     color: white;
 }
