@@ -74,14 +74,14 @@ const playlists = {
         { title: "BUTCHER VANITY", url: "vjBFftpQxxM" }
     ],
     playlist3: [
-        { title: preparing!, url: "AuKR2fQbMBk" },
-        { title: preparing!, url: "AuKR2fQbMBk" },
-        { title: preparing!, url: "AuKR2fQbMBk" }
+        { title: "Track X", url: "5NV6Rdv1a3I" },
+        { title: "Track Y", url: "pXRviuL6vMY" },
+        { title: "Track Z", url: "Kp7eSUU9oy8" }
     ],
-    playlist4: [
-        { title: preparing!, url: "AuKR2fQbMBk" },
-        { title: preparing!, url: "AuKR2fQbMBk" },
-        { title: preparing!, url: "AuKR2fQbMBk" }
+        playlist4: [
+        { title: "Track X", url: "5NV6Rdv1a3I" },
+        { title: "Track Y", url: "pXRviuL6vMY" },
+        { title: "Track Z", url: "Kp7eSUU9oy8" }
     ]
 };
 
