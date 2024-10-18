@@ -94,10 +94,16 @@ function onPlayerStateChange(event) {
 }
 
 function loadPlaylist(playlistName) {
+    if (!player) {
+        console.error('YouTube player is not ready yet.');
+        return;
+    }
     currentPlaylist = playlists[playlistName];
     currentVideoIndex = 0;
     displayPlaylist(currentPlaylist);
-    loadVideo(currentVideoIndex);
+    if (currentPlaylist.length > 0) {
+        loadVideo(currentVideoIndex);
+    }
 }
 
 function displayPlaylist(playlist) {
@@ -111,11 +117,16 @@ function displayPlaylist(playlist) {
 }
 
 function loadVideo(index) {
+    if (!player) {
+        console.error('YouTube player is not ready yet.');
+        return;
+    }
     currentVideoIndex = index;
     player.loadVideoById(currentPlaylist[currentVideoIndex].url);
 }
 
 function togglePlayPause() {
+    if (!player) return;
     if (player.getPlayerState() === YT.PlayerState.PLAYING) {
         player.pauseVideo();
     } else {
@@ -124,16 +135,18 @@ function togglePlayPause() {
 }
 
 function playPrevious() {
+    if (!player) return;
     currentVideoIndex = (currentVideoIndex - 1 + currentPlaylist.length) % currentPlaylist.length;
     loadVideo(currentVideoIndex);
 }
 
 function playNext() {
+    if (!player) return;
     currentVideoIndex = (currentVideoIndex + 1) % currentPlaylist.length;
     loadVideo(currentVideoIndex);
 }
 
-document.addEventListener('DOMContentLoaded', (event) => {
+function initializePlaylistButtons() {
     document.querySelectorAll('.playlist-button').forEach(button => {
         button.addEventListener('click', function(e) {
             e.preventDefault();
@@ -141,4 +154,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
             loadPlaylist(playlistName);
         });
     });
+}
+
+// Check if YouTube IFrame API is loaded
+function checkYouTubeApiLoaded() {
+    if (typeof YT !== 'undefined' && YT.Player) {
+        onYouTubeIframeAPIReady();
+    } else {
+        setTimeout(checkYouTubeApiLoaded, 100);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    initializePlaylistButtons();
+    checkYouTubeApiLoaded();
 });
