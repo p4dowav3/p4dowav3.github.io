@@ -79,7 +79,7 @@ const playlists = {
 
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
-        height: '90',
+        height: '360',
         width: '640',
         videoId: '',
         playerVars: {
