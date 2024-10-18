@@ -85,7 +85,7 @@ const playlists = {
         { title: "きみとぼくのレゾナンス", url: "n4N3h4iuovs" },
         { title: "フューチャー・イヴ", url: "7j0mQH0BtEU" },
         { title: "パジャミィ", url: "aBZqxfnvaVA" },
-        { title: "初音天地開闢神話", url: "8J6SMoVd5BY" },
+        { title: "踊れオーケストラ", url: "5XcRbKUKSdY" },
         { title: "キラピピ★キラピカ", url: "mQH0Fmk1K0g" }
     ]
 };
