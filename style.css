@@ -324,16 +324,28 @@ h1 {
         height: auto;
     }
 
-    .playlist-buttons, .playlist-content {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
     .playlist-buttons {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        height: auto;
+        max-height: 20vh;
+        overflow-y: auto;
     }
+
+    .playlist-button {
+        width: auto;
+        margin: 5px;
+    }
+
+    #player {
+        height: 30vh;
+    }
+
+    #playlist-display {
+        max-height: 30vh;
+    }
+}
 
 .playlist-button {
     background-color: rgba(255, 255, 255, 0.1);
@@ -354,31 +366,6 @@ h1 {
 
 .playlist-button:hover {
     background-color: rgba(255, 255, 255, 0.2);
-}
-
-@media (max-width: 768px) {
-    .playlist-buttons {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        height: auto;
-        max-height: 20vh;
-        overflow-y: auto;
-    }
-
-    .playlist-button {
-        width: auto;
-        margin: 5px;
-    }
-}
-
-    #player {
-        height: 30vh;
-    }
-
-    #playlist-display {
-        max-height: 30vh;
-    }
 }
 
 .player-controls {
