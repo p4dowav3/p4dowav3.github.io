@@ -321,7 +321,7 @@ h1 {
 @media (max-width: 768px) {
     .playlist-container {
         flex-direction: column;
-        height: auto;
+        height: 80%;
     }
 
     .playlist-buttons {
@@ -329,8 +329,7 @@ h1 {
         flex-wrap: wrap;
         justify-content: center;
         height: auto;
-        max-height: 20vh;
-        overflow-y: auto;
+        width: 80%;
     }
 
     .playlist-button {
@@ -339,11 +338,11 @@ h1 {
     }
 
     #player {
-        height: 30vh;
+        height: 70%;
     }
 
     #playlist-display {
-        max-height: 30vh;
+        max-height: 70%;
     }
 }
 
