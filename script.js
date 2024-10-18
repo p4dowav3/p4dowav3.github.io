@@ -143,10 +143,7 @@ function displayPlaylist(playlist) {
 }
 
 function loadVideo(index) {
-    if (!player) {
-        console.error('YouTube player is not ready yet.');
-        return;
-    }
+    if (!player) return;
     currentVideoIndex = index;
     player.loadVideoById(currentPlaylist[currentVideoIndex].url);
 }
