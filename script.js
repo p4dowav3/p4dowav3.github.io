@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             }, 1500);
         });
     });
+    
 function loadPage(url) {
     fetch(url)
         .then(response => {
@@ -24,19 +25,9 @@ function loadPage(url) {
             const parser = new DOMParser();
             const doc = parser.parseFromString(html, 'text/html');
 
-            const newContent = doc.querySelector('.content-wrapper');
-            if (newContent) {
-                document.querySelector('.content-wrapper').innerHTML = newContent.innerHTML;
-            }
-
-            const newLangMenu = doc.querySelector('.lang-menu');
-            if (newLangMenu) {
-                document.querySelector('.lang-menu').innerHTML = newLangMenu.innerHTML;
-            }
+            document.documentElement.innerHTML = doc.documentElement.innerHTML;
 
             history.pushState(null, '', url);
-
-            document.title = doc.title;
 
             document.body.style.opacity = 1;
             document.body.classList.remove('fade-out');
@@ -46,6 +37,7 @@ function loadPage(url) {
             window.location.href = url;
         });
 }
+
 
     window.addEventListener('popstate', () => {
         loadPage(window.location.pathname);
