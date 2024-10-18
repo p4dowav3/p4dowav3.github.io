@@ -80,6 +80,13 @@ const playlists = {
         { title: "㋰責任集合体", url: "c5_0NPftdlY" },
         { title: "メズマライザー", url: "19y8YTbvri8" },
         { title: "脱法ロック", url: "u5mHVUwDf_0" }
+    ],
+    playlist4: [
+        { title: "きみとぼくのレゾナンス", url: "n4N3h4iuovs" },
+        { title: "フューチャー・イヴ", url: "7j0mQH0BtEU" },
+        { title: "パジャミィ", url: "aBZqxfnvaVA" },
+        { title: "初音天地開闢神話", url: "8J6SMoVd5BY" },
+        { title: "キラピピ★キラピカ", url: "mQH0Fmk1K0g" }
     ]
 };
 
