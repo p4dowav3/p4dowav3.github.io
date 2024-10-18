@@ -271,7 +271,6 @@ h1 {
 }
 
 .playlist-button {
-    font-family: Arial, sans-serif;
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
     border: none;
@@ -281,7 +280,7 @@ h1 {
     transition: background-color 0.3s;
     text-align: center;
     text-decoration: none;
-    font-family: 'DOSPilgiMedium';
+    font-family: Arial, sans-serif;
 }
 
 .playlist-button:hover {
