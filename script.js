@@ -70,7 +70,7 @@ const playlists = {
     playlist2: [
         { title: "ヴァンパイア", url: "e1xCOsgWG0M" },
         { title: "イガク", url: "F38EuG2dAyM" },
-        { title: "メズマライザー", url: "19y8YTbvri8" }
+        { title: "メズマライザー", url: "19y8YTbvri8" },
         { title: "BUTCHER VANITY", url: "vjBFftpQxxM" }
     ],
     playlist3: [
