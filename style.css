@@ -81,35 +81,36 @@ body, html {
 
 .playlist-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     width: 100%;
+    max-width: 100%;
     margin-top: 20px;
     height: 60vh;
+    overflow: hidden;
 }
 
 .playlist-buttons {
     display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: 100%;
-    overflow-y: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%; 
+    max-width: 100%;
+    padding: 5px;
 }
 
 .playlist-button {
+    flex-basis: calc(33.33% - 10px);
+    min-width: 90px;
+    margin: 5px;
+    font-size: 1.5rem;
+    padding: 10px;
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
     border: none;
-    padding: 10px;
-    margin: 5px 0;
+    text-align: center;
     cursor: pointer;
     transition: background-color 0.3s;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'DOSPilgiMedium';
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .playlist-button:hover {
@@ -117,20 +118,21 @@ body, html {
 }
 
 .playlist-content {
-    width: 65%;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 5px;
     height: 100%;
     display: flex;
     flex-direction: column;
+    position: relative;
+    padding-bottom: 50px;
 }
 
 #player {
     width: 100%;
-    height: 50%;
-    margin-bottom: 20px;
-    background: transparent;
+    height: 40%;
+    margin-bottom: 10px;
 }
 
 #playlist-display {
@@ -154,18 +156,19 @@ body, html {
     text-decoration: none;
     font-family: 'MiraeroNormal';
     transition: opacity 0.3s;
-    display: block;
-}
-
-#playlist-display a:hover {
-    opacity: 0.7;
-    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .player-controls {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
 }
 
 .player-controls button {
@@ -173,7 +176,6 @@ body, html {
     padding: 10px 20px;
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
-    font-family: 'MiraeroNormal';
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -186,59 +188,17 @@ body, html {
 @media (max-width: 768px) {
     .playlist-container {
         flex-direction: column;
-        width: 100%;
-        max-width: 100%;
         height: 80%;
-        overflow: hidden;
     }
 
     .playlist-buttons {
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         width: 100%;
-        max-width: 100%;
-        padding: 5px; 
     }
 
     #player {
-        width: 100%;
-        max-width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .playlist-content {
-        position: relative;
-        padding-bottom: 50px;
-        overflow: hidden;
-    }
-
-    .player-controls {
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        z-index: 2;
-        background-color: rgba(0, 0, 0, 0.7);
-        padding: 10px;
-    }
-
-    .player-controls button {
-        margin: 0 10px;
-        padding: 10px 20px;
-        background-color: rgba(255, 255, 255, 0.1);
-        color: white;
-        font-family: 'MiraeroNormal';
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
-
-    .player-controls button:hover {
-        background-color: rgba(255, 255, 255, 0.2);
+        height: 50%;
     }
 }
