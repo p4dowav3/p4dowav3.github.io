@@ -22,16 +22,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 const newContent = doc.querySelector('.content-wrapper').innerHTML;
                 
                 document.body.style.opacity = 0;
-                
+
                 setTimeout(() => {
                     document.querySelector('.content-wrapper').innerHTML = newContent;
+
+                    const newLangMenu = doc.querySelector('.lang-menu').innerHTML;
+                    document.querySelector('.lang-menu').innerHTML = newLangMenu;
                     
                     history.pushState(null, '', url);
-                    
+
                     document.title = doc.title;
                     
                     document.body.style.opacity = 1;
-                    
                     document.body.classList.remove('fade-out');
                 }, 300);
             });
