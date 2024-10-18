@@ -68,19 +68,16 @@ const playlists = {
         { title: "少女レイ", url: "JW3N-HvU0MA" }
     ],
     playlist2: [
-        { title: "Song A", url: "z9Uz1icjwrM" },
-        { title: "Song B", url: "C0DPdy98e4c" },
-        { title: "Song C", url: "wZZ7oFKsKzY" }
+        { title: "ヴァンパイア", url: "e1xCOsgWG0M" },
+        { title: "イガク", url: "F38EuG2dAyM" },
+        { title: "メズマライザー", url: "19y8YTbvri8" }
+        { title: "BUTCHER VANITY", url: "vjBFftpQxxM" }
     ],
     playlist3: [
-        { title: "Track X", url: "5NV6Rdv1a3I" },
-        { title: "Track Y", url: "pXRviuL6vMY" },
-        { title: "Track Z", url: "Kp7eSUU9oy8" }
+        { title: preparing! }
     ],
-        playlist4: [
-        { title: "Track X", url: "5NV6Rdv1a3I" },
-        { title: "Track Y", url: "pXRviuL6vMY" },
-        { title: "Track Z", url: "Kp7eSUU9oy8" }
+    playlist4: [
+        { title: preparing! }
     ]
 };
 
