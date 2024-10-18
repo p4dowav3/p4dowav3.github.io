@@ -61,9 +61,11 @@ let currentVideoIndex = 0;
 
 const playlists = {
     playlist1: [
-        { title: "Song 1", url: "dQw4w9WgXcQ" },
-        { title: "Song 2", url: "9bZkp7q19f0" },
-        { title: "Song 3", url: "hY7m5jjJ9mM" }
+        { title: "ラムネイドブルーの憧憬", url: "tT1tEcvAaQM" },
+        { title: "ラストスコア", url: "zAWu9BK_V5M" },
+        { title: "水死体にもどらないで", url: "1bTQMYnEf_Y" },
+        { title: "パインドロップ", url: "y1K8OBOU5kM" },
+        { title: "少女レイ", url: "JW3N-HvU0MA" }
     ],
     playlist2: [
         { title: "Song A", url: "z9Uz1icjwrM" },
@@ -71,6 +73,11 @@ const playlists = {
         { title: "Song C", url: "wZZ7oFKsKzY" }
     ],
     playlist3: [
+        { title: "Track X", url: "5NV6Rdv1a3I" },
+        { title: "Track Y", url: "pXRviuL6vMY" },
+        { title: "Track Z", url: "Kp7eSUU9oy8" }
+    ],
+        playlist4: [
         { title: "Track X", url: "5NV6Rdv1a3I" },
         { title: "Track Y", url: "pXRviuL6vMY" },
         { title: "Track Z", url: "Kp7eSUU9oy8" }
