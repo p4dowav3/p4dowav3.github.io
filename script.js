@@ -47,48 +47,56 @@ document.addEventListener('DOMContentLoaded', (event) => {
         loadPage(window.location.pathname);
     });
 
-    function initPlaylist() {
-        const playlistButtons = document.querySelectorAll('.playlist-button');
-        const playlistDisplay = document.getElementById('playlist-display');
+    let player;
+    let currentVideoIndex = 0;
+    const playlist = [
+      { title: "Song 1", url: "dQw4w9WgXcQ" },
+      { title: "Song 2", url: "9bZkp7q19f0" },
+      { title: "Song 3", url: "hY7m5jjJ9mM" }
+    ];
 
-        if (!playlistButtons.length || !playlistDisplay) {
-            return;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        height: '360',
+        width: '640',
+        videoId: playlist[currentVideoIndex].url, 
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
         }
+      });
+    }
 
-        const playlists = {
-            playlist1: [
-                { title: "Song 1", url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
-                { title: "Song 2", url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
-                { title: "Song 3", url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" }
-            ],
-            playlist2: [
-                { title: "Song A", url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
-                { title: "Song B", url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
-                { title: "Song C", url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" }
-            ],
-            playlist3: [
-                { title: "Song X", url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
-                { title: "Song Y", url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
-                { title: "Song Z", url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" }
-            ]
-        };
+    function onPlayerReady(event) {
+      document.getElementById("playPauseButton").addEventListener('click', togglePlayPause);
+      document.getElementById("prevButton").addEventListener('click', playPrevious);
+      document.getElementById("nextButton").addEventListener('click', playNext);
+    }
 
-        playlistButtons.forEach(button => {
-            button.addEventListener('click', function(e) {
-                e.preventDefault();
-                const playlistName = this.getAttribute('data-playlist');
-                displayPlaylist(playlists[playlistName]);
-            });
-        });
+    function togglePlayPause() {
+      const playerState = player.getPlayerState();
+      if (playerState === YT.PlayerState.PLAYING) {
+        player.pauseVideo();
+      } else {
+        player.playVideo();
+      }
+    }
 
-        function displayPlaylist(playlist) {
-            let html = '<ul>';
-            playlist.forEach(song => {
-                html += `<li><a href="${song.url}" target="_blank">${song.title}</a></li>`;
-            });
-            html += '</ul>';
-            playlistDisplay.innerHTML = html;
-        }
+    function playPrevious() {
+      currentVideoIndex = (currentVideoIndex - 1 + playlist.length) % playlist.length;
+      loadVideo(currentVideoIndex);
+    }
+
+    function playNext() {
+      currentVideoIndex = (currentVideoIndex + 1) % playlist.length;
+      loadVideo(currentVideoIndex);
+    }
+
+    function loadVideo(index) {
+      player.loadVideoById(playlist[index].url);
+    }
+
+    function onPlayerStateChange(event) {
     }
 
     initPlaylist();
