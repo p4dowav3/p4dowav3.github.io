@@ -87,6 +87,7 @@ const playlists = {
         { title: "パジャミィ", url: "aBZqxfnvaVA" },
         { title: "踊れオーケストラ", url: "5XcRbKUKSdY" },
         { title: "キラピピ★キラピカ", url: "mQH0Fmk1K0g" }
+    ],
     playlist5: [
         { title: "Resonant Objects", url: "He0-sUdNI3Q" },
         { title: "Bloody KOF XV ver.", url: "5OT8pDw8aWE" },
