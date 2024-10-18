@@ -15,7 +15,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     function loadPage(url) {
         fetch(url)
-            .then(response => response.text())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
             .then(html => {
                 const parser = new DOMParser();
                 const doc = parser.parseFromString(html, 'text/html');
@@ -36,6 +41,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     document.body.style.opacity = 1;
                     document.body.classList.remove('fade-out');
                 }, 300);
+            })
+            .catch(error => {
+                console.error('Fetch error:', error);
+                window.location.href = url;
             });
     }
 
