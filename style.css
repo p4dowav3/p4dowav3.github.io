@@ -335,9 +335,42 @@ h1 {
         justify-content: center;
     }
 
+.playlist-button {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'DOSPilgiMedium';
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.playlist-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+    .playlist-buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        max-height: 20vh;
+        overflow-y: auto;
+    }
+
     .playlist-button {
+        width: auto;
         margin: 5px;
     }
+}
 
     #player {
         height: 30vh;
