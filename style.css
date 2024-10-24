@@ -139,6 +139,9 @@ body, html {
     opacity: 0.7;
 }
 @media (max-width: 768px) {
+    .content-wrapper {
+        width: 90%;
+    }
     .index-content {
         display: flex;
         flex-direction: column;
