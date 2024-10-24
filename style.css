@@ -389,7 +389,7 @@ h1 {
 @media (max-width: 768px) {
     .title.playlist-page-title {
         margin-top: 5vh;
-        margin-bottom: 2vh;
+        margin-bottom: none;
     }
     
     .playlist-container {
@@ -405,6 +405,7 @@ h1 {
         overflow-x: auto;
         overflow-y: hidden;
         padding: 10px 0;
+        margin-top: 2vh;
         margin-bottom: 20px;
         gap: 10px;
         scrollbar-width: thin;
