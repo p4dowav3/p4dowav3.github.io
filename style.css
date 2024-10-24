@@ -355,6 +355,7 @@ h1 {
         height: auto;
         display: flex;
         flex-direction: row;
+        margin-bottom: -2vh;
         overflow-x: auto;
         overflow-y: hidden;
         padding: 5px 0;
