@@ -332,23 +332,31 @@ h1 {
 
     .playlist-buttons {
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
         height: auto;
-        width: 80%;
+        padding: 10px 0;
+        margin-bottom: 20px;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
     }
 
     .playlist-button {
         width: auto;
-        margin: 5px;
-    }
+        min-width: fit-content;
+        height: fit-content;
+        margin: 0 5px;
+        padding: 8px 12px;
+        font-size: 1.5em;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
 
-    #player {
-        height: 70%;
-    }
-
-    #playlist-display {
-        max-height: 70%;
+    .playlist-content {
+        width: 100%;
+        height: calc(100% - 70px);
     }
 }
 
