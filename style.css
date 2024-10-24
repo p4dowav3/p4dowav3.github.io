@@ -389,7 +389,6 @@ h1 {
 @media (max-width: 768px) {
     .title.playlist-page-title {
         margin-top: 10vh;
-        margin-bottom: 5vh;
     }
     
     .playlist-container {
