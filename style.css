@@ -346,7 +346,7 @@ h1 {
     
     .playlist-container {
         flex-direction: column;
-        height: 80vh;
+        height: 85vh;
     }
 
     .playlist-buttons {
@@ -356,8 +356,8 @@ h1 {
         flex-direction: row;
         overflow-x: auto;
         overflow-y: hidden;
-        padding: 10px 0;
-        margin-bottom: 10px;
+        padding: 5px 0;
+        margin-bottom: 5px;
         gap: 10px;
         scrollbar-width: thin;
         -webkit-overflow-scrolling: touch;
@@ -368,37 +368,28 @@ h1 {
         width: auto;
         min-width: min-content;
         height: auto;
-        padding: 8px 16px;
+        padding: 6px 12px;
         margin: 0;
         white-space: nowrap;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.2em;
+        font-size: 1.1em;
         border-radius: 4px;
     }
 
     .playlist-content {
         width: 100%;
-        height: calc(100% - 80px);
+        height: calc(100% - 50px);
     }
 
-    .playlist-buttons::-webkit-scrollbar {
-        height: 6px;
+    #player {
+        height: 45%;
     }
 
-    .playlist-buttons::-webkit-scrollbar-track {
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 3px;
-    }
-
-    .playlist-buttons::-webkit-scrollbar-thumb {
-        background: rgba(255, 255, 255, 0.3);
-        border-radius: 3px;
-    }
-
-    .playlist-buttons::-webkit-scrollbar-thumb:hover {
-        background: rgba(255, 255, 255, 0.4);
+    #playlist-display {
+        height: 45%;
+        overflow-y: auto;
     }
 }
 
