@@ -346,7 +346,7 @@ h1 {
     
     .playlist-container {
         flex-direction: column;
-        margin-top: -5vh;
+        margin-top: 1vh;
         height: 50vh;
     }
 
@@ -355,7 +355,7 @@ h1 {
         height: auto;
         display: flex;
         flex-direction: row;
-        margin-bottom: -2vh;
+        margin-bottom: 1vh;
         overflow-x: auto;
         overflow-y: hidden;
         padding: 5px 0;
