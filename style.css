@@ -67,6 +67,20 @@ body, html {
     font-size: 3rem;
   }
 
+.title.playlist-page-title {
+    margin-top: 5vh;
+    margin-bottom: 6vh;
+    font-size: 3rem;
+}
+
+.playlist-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    height: 60vh;
+}
+
   .content {
     width: 100%;
     text-align: justify;
@@ -325,9 +339,9 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  .title.page-title {
-    margin-bottom: 4vh;
-  }
+    .title.playlist-page-title {
+        margin-bottom: 2vh;
+    }
     
     .playlist-container {
         flex-direction: column;
