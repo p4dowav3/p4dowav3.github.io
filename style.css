@@ -346,7 +346,7 @@ h1 {
     .playlist-container {
         flex-direction: column;
         margin-top: -5px;
-        height: 60vh;
+        height: 40vh;
     }
 
     .playlist-buttons {
