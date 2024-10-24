@@ -348,6 +348,44 @@ h1 {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+.playlist-button {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'sans-serif';
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.playlist-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.player-controls button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-family: 'MiraeroNormal';
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
 @media (max-width: 768px) {
     .title.playlist-page-title {
         margin-top: 10vh;
@@ -362,7 +400,7 @@ h1 {
 
     .playlist-buttons {
         width: 100%;
-        height: auto;
+        height: 5vh;
         display: flex;
         flex-direction: row;
         margin-bottom: 5vh;
@@ -402,44 +440,6 @@ h1 {
         height: 45%;
         overflow-y: auto;
     }
-}
-
-.playlist-button {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: white;
-    border: none;
-    padding: 10px;
-    margin: 5px 0;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'sans-serif';
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.playlist-button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-.player-controls {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.player-controls button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: white;
-    font-family: 'MiraeroNormal';
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 .player-controls button:hover {
