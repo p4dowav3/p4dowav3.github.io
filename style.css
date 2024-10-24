@@ -159,6 +159,10 @@ body, html {
     .extra-options .language-option {
         margin: 10px 0;
     }
+    
+    .content {
+        font-size: 1rem;
+    }
 }
 
 .lang-menu {
