@@ -401,7 +401,7 @@ h1 {
     
     .playlist-buttons {
         width: 100%;
-        height: 5vh;
+        height: auto;
         display: flex;
         flex-direction: row;
         margin-bottom: 5vh;
