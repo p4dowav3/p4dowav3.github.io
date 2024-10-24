@@ -350,13 +350,13 @@ h1 {
 
 @media (max-width: 768px) {
     .title.playlist-page-title {
-        margin-top: 5vh;
+        margin-top: 10vh;
         margin-bottom: 5vh;
     }
     
     .playlist-container {
         flex-direction: column;
-        margin-top: 3vh;
+        margin-top: 5vh;
         height: 60vh;
     }
 
@@ -365,7 +365,7 @@ h1 {
         height: auto;
         display: flex;
         flex-direction: row;
-        margin-bottom: 3vh;
+        margin-bottom: 5vh;
         overflow-x: auto;
         overflow-y: hidden;
         padding: 5px 0;
