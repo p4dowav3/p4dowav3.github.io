@@ -399,10 +399,11 @@ h1 {
     }
 
     .playlist-buttons {
-        width: 100%;
+        width: fit-content;
         height: 5vh;
         display: flex;
         flex-direction: row;
+        justify-content: center;
         margin-bottom: 5vh;
         overflow-x: auto;
         overflow-y: hidden;
