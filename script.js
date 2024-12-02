@@ -94,6 +94,13 @@ const playlists = {
         { title: "Rhythmic Hallucination KOF XV ver.", url: "EMkFNWO31yo" },
         { title: "Fanatic Waltz KOF XV ver.", url: "RQhqbz3O1bI" },
         { title: "Mad Fantasy -KOF XV ver.", url: "_OCgm2t7-Fc" }
+    ],
+    playlist6: [
+        { title: "My name is", url: "LDj8kkVwisY" },
+        { title: "The Real Slim Shady", url: "eJO5HU_7_1w" },
+        { title: "Without me", url: "YVkUvmDQ3HY" },
+        { title: "I'm back", url: "UimodeZfA9o" },
+        { title: "Houdini", url: "22tVWwmTie8" }
     ]
 };
 
